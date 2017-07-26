@@ -14,3 +14,6 @@ to combine sources of data coming from batch jobs and real-time data and you wou
 real-time stream.
 
 ![image](https://user-images.githubusercontent.com/14280155/28602648-49095ebc-718d-11e7-9f3a-9a66fd504930.png)
+
+## Contributions and PRs
+Please feel free to contribute by sending a Pull Request or filing an issue.
