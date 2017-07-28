@@ -1,4 +1,6 @@
 # Akka Streams: Interleaving streams with priority
+[![Build Status](https://travis-ci.org/calvinlfer/akka-streams-interleaving.svg?branch=master)](https://travis-ci.org/calvinlfer/akka-streams-interleaving)
+
 This is a set of examples to demonstrate to make use of Akka Streams built-in stages to achieve interleaving
 stream behavior to give priority to one lane of data amidst many lanes of data. 
 
@@ -14,6 +16,18 @@ to combine sources of data coming from batch jobs and real-time data and you wou
 real-time stream.
 
 ![image](https://user-images.githubusercontent.com/14280155/28602648-49095ebc-718d-11e7-9f3a-9a66fd504930.png)
+
+
+## Running tests:
+You can run tests with:
+```bash
+sbt test
+```
+
+You can check coverage using:
+```bash
+sbt coverage test coverageReport
+```
 
 ## Contributions and PRs
 Please feel free to contribute by sending a Pull Request or filing an issue.

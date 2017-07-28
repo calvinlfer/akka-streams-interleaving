@@ -64,6 +64,3 @@ libraryDependencies ++= {
     scalatest %% "scalatest"             % scalatestV
   )
 }
-
-coverageMinimum := 70
-coverageFailOnMinimum := true
