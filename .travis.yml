@@ -1,0 +1,10 @@
+language: scala
+jdk: oraclejdk8
+scala:
+- 2.12.3
+cache:
+  directories:
+  - "$HOME/.ivy2/cache"
+  - "$HOME/.sbt/boot/"
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION coverage test coverageReport
