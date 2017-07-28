@@ -49,16 +49,18 @@ scalacOptions ++= Seq(
   "-Ywarn-unused:locals",              // Warn if a local definition is unused.
   "-Ywarn-unused:params",              // Warn if a value parameter is unused.
   "-Ywarn-unused:patvars",             // Warn if a variable bound in a pattern is unused.
-  "-Ywarn-unused:privates",            // Warn if a private member is unused.
-  "-Ywarn-value-discard"               // Warn when non-Unit expression results are unused.
+  "-Ywarn-unused:privates"            // Warn if a private member is unused.
 )
 
 libraryDependencies ++= {
   val akka = "com.typesafe.akka"
+  val scalatest = "org.scalatest"
   val akkaV = "2.5.3"
+  val scalatestV = "3.0.3"
   Seq(
-    akka %%     "akka-stream"           % akkaV,
-    akka %%     "akka-stream-testkit"   % akkaV % Test,
-    akka %%     "akka-http-spray-json"  % "10.0.9"
+    akka      %% "akka-stream"           % akkaV,
+    akka      %% "akka-stream-testkit"   % akkaV % Test,
+    akka      %% "akka-http-spray-json"  % "10.0.9",
+    scalatest %% "scalatest"             % scalatestV
   )
 }
